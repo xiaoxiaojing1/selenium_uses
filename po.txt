@@ -1,0 +1,62 @@
+
+D:selenium_uses
+│  
+│  run.py           入口函数执行run.py
+│  __init__.py
+│  
+│          
+├─Conf
+│  │  caseSkip.py   unittest.skip用
+│  │  config.ini    配置文件
+│  │  filedata.txt  
+│  │  setting.py    公共导入库
+│  │
+│          
+├─driver    驱动文件 和浏览器版本挂钩
+│      chromedriver.exe
+│      geckodriver.exe
+│      IEDriverServer.exe
+│      
+├─logs      日志文件夹
+│      WebTest_20180820_0000.log
+│      WebTest_20180820_0008.log
+│      WebTest_20180820_0018.log
+│      
+├─Pic       截图文件夹
+│      loginFiled.jpg
+│      test_send_keys.jpg
+│      
+├─Report-20180819  当日报告
+│      Report-222156.html  22：21：56
+│      
+├─test     临时文件夹可以命名为temp
+│      sizelog.txt 尺寸写入
+│      __init__.py
+│      
+├─test_case   *测试用例
+│  │  test_baidu_api.py  
+│  │  test_baidu_keys.py
+│  │  test_checkTesterhome.py
+│  │  test_loginTesterhome.py
+│  │  test_loginTesterhome_log.py
+│  │  test_tianmao.py
+│  │  utils_import.py
+│  │  __init__.py  文件夹提升成模块
+│  └─  
+│          
+├─test_data   数据驱动 可以和Conf放在一起
+│      data.xlsx  如果大量文件都是用excel读取的就摆这里
+│      __init__.py 直接读不用init
+│      
+└─util    工具类模块
+    │  Base.py  基本类，不包含webdriver
+    │  ClientSelenium.py  包含webdriver
+    │  Err.py             异常类
+    │  HTMLTestRunner.py  *报告类 即时使用
+    │  log.py		   *日志类 即时使用
+    │  ParserConfig.py    读取ini文件
+    │  ReadOpenData.py	   读取excel文件
+    │  __init__.py        文件夹提升成模块
+    │  
+    └─
+            
